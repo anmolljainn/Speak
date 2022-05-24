@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Speak</title>
+  <link rel="stylesheet" href="assets/styles/popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body class="live-caption-popup">
+  <header>
+    <img src="assets/img/logo.jpg" alt="Extension logo">
+    <h2 class="live-caption-title">SPEAK</h2>
+    <p class="description">Speak lets you use speech-to-text to provide live captions for presentations</p>
+    <button style="background-color: transparent; border-radius: 5px;border: 0px solid #333;"><i class="fa fa-microphone" style="font-size:48px;color:wheat"></i></button>
+  </header>
+  
+  <main class="content-container">
+
+    <div class="language-select-element">
+      <label for="language-select">Spoken language:</label>
+      <select class="language-select">
+        <option value="en-US">English(US)</option>
+        <option value="en-AU">English (Australia)</option>
+        <option value="en-CA">English (Canada)</option>
+        <option value="en-IN">English (India)</option>
+        <option value="en-NZ">English (New Zealand)</option>
+        <option value="en-ZA">English (South Africa)</option>
+        <option value="en-GB">English (UK)</option>
+      </select>
+
+    </div>
+
+
+    <p class="error-message"></p>
+
+  </main>
+
+  <div class="buttons-container">
+    <button class="activation-button">START</button>
+    <button class="deactivation-button">STOP</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
